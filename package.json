@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Just an experiment creating a typescript npm package",
   "scripts": {
-    "test": "jest",
+    "test": "jest ./src",
     "build": "tsc",
     "lint": "eslint . --fix",
     "format": "prettier --write .",
