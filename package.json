@@ -1,0 +1,40 @@
+{
+  "name": "sudety-utils",
+  "version": "1.0.0",
+  "description": "Just an experiment creating a typescript npm package",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "lint": "eslint . --fix",
+    "format": "prettier --write .",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint && npm run format && npm run test",
+    "version": "npm run format && git add -A src",
+    "postpublish": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otavlna/sudety-utils.git"
+  },
+  "author": "Ota Vlna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/otavlna/sudety-utils/issues"
+  },
+  "homepage": "https://github.com/otavlna/sudety-utils#readme",
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [
+    "sudety"
+  ],
+  "devDependencies": {
+    "@types/jest": "^29.1.2",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
+    "prettier": "2.7.1",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.8.4"
+  }
+}
